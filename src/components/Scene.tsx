@@ -33,8 +33,8 @@ export function Scene({
   return (
     <SceneGuard>
       <div className="scene-layer">
-        <Canvas
-          camera={{ position: [2.4, 1.6, 5.6], fov: 38 }}
+          <Canvas
+          camera={{ position: [0.2, 1.35, 6.2], fov: 36 }}
           dpr={[1, 1.5]}
           gl={{ antialias: true, alpha: false, powerPreference: 'high-performance' }}
         >

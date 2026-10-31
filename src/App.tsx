@@ -19,11 +19,11 @@ function usePageSize() {
       const vh = window.visualViewport?.height ?? window.innerHeight
       const phone = vw < 700
       const tablet = vw >= 700 && vw < 1100
-      const padX = phone ? 18 : tablet ? 56 : 120
-      const padY = phone ? 118 : tablet ? 140 : 168
+      const padX = phone ? 28 : tablet ? 96 : 220
+      const padY = phone ? 128 : tablet ? 168 : 210
       const maxBookW = Math.max(vw - padX, 280)
-      const maxBookH = Math.max(vh - padY, 320)
-      const w = Math.min(maxBookW / 2, maxBookH * 0.72, phone ? 360 : 500)
+      const maxBookH = Math.max(vh - padY, 300)
+      const w = Math.min(maxBookW / 2, maxBookH * 0.72, phone ? 340 : 460)
       const h = Math.min(w / 0.72, maxBookH)
       setSize({ w, h })
     }
